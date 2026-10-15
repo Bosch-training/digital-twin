@@ -1,0 +1,189 @@
+{
+  "_comment": "SAMPLE DATA - illustrative only. Replace with the real week's status.",
+  "team": "Digital Twin Team",
+  "sprint": 3,
+  "week_start": "2026-10-12",
+  "week_end": "2026-10-16",
+  "rag": "amber",
+  "rag_reason": "Two items blocked on external dependencies",
+  "committed_points": 40,
+  "goal": "Ship the self-service onboarding flow to staging with audit logging enabled.",
+  "prepared_by": "Scrum Master",
+  "contact": "scrum@acke.in",
+  "summary": [
+    "24 of 40 story points completed at mid-sprint",
+    "Onboarding API and audit logging merged",
+    "SSO integration blocked on vendor sandbox access",
+    "Test environment instability cost about one day",
+    "Burndown slightly behind ideal; recoverable"
+  ],
+  "burndown": {
+    "labels": [
+      "D1",
+      "D2",
+      "D3",
+      "D4",
+      "D5",
+      "D6",
+      "D7",
+      "D8",
+      "D9",
+      "D10"
+    ],
+    "remaining": [
+      40,
+      38,
+      35,
+      33,
+      28,
+      24
+    ]
+  },
+  "completed": [
+    {
+      "id": "ACK-101",
+      "title": "Onboarding REST API endpoints",
+      "points": 8,
+      "owner": "Asha",
+      "detail": "Merged with 92% coverage; OpenAPI spec published."
+    },
+    {
+      "id": "ACK-104",
+      "title": "Audit log persistence layer",
+      "points": 5,
+      "owner": "Ravi"
+    },
+    {
+      "id": "ACK-107",
+      "title": "Input validation for tenant creation",
+      "points": 3,
+      "owner": "Meera"
+    },
+    {
+      "id": "ACK-110",
+      "title": "CI pipeline caching",
+      "points": 5,
+      "owner": "Karthik"
+    },
+    {
+      "id": "ACK-112",
+      "title": "Staging environment seed script",
+      "points": 3,
+      "owner": "Asha"
+    }
+  ],
+  "in_progress": [
+    {
+      "id": "ACK-102",
+      "title": "Onboarding UI wizard",
+      "points": 8,
+      "owner": "Divya",
+      "percent": 60
+    },
+    {
+      "id": "ACK-105",
+      "title": "Audit log search screen",
+      "points": 5,
+      "owner": "Ravi",
+      "percent": 30
+    },
+    {
+      "id": "ACK-108",
+      "title": "Role-based access checks",
+      "points": 5,
+      "owner": "Meera",
+      "percent": 50
+    },
+    {
+      "id": "ACK-113",
+      "title": "Load test baseline",
+      "points": 3,
+      "owner": "Karthik",
+      "percent": 20
+    }
+  ],
+  "blocked": [
+    {
+      "id": "ACK-103",
+      "title": "SSO integration",
+      "owner": "Asha",
+      "ask": "Vendor sandbox credentials needed by Mon",
+      "detail": "Ticket raised with vendor on Tuesday; no response yet."
+    },
+    {
+      "id": "ACK-109",
+      "title": "Email notification templates",
+      "owner": "Divya",
+      "ask": "Approved copy from Marketing"
+    }
+  ],
+  "risks": [
+    {
+      "risk": "SSO vendor delay may miss sprint goal",
+      "severity": "high",
+      "mitigation": "Mock SSO provider behind a feature flag",
+      "owner": "Asha"
+    },
+    {
+      "risk": "Shared test environment instability",
+      "severity": "medium",
+      "mitigation": "Dedicated namespace requested from DevOps",
+      "owner": "Karthik"
+    },
+    {
+      "risk": "Holiday leave reduces capacity next week",
+      "severity": "low",
+      "mitigation": "Re-plan scope on Monday",
+      "owner": "Scrum Master"
+    }
+  ],
+  "velocity": [
+    {
+      "sprint": "S7",
+      "committed": 34,
+      "completed": 30
+    },
+    {
+      "sprint": "S8",
+      "committed": 36,
+      "completed": 33
+    },
+    {
+      "sprint": "S9",
+      "committed": 38,
+      "completed": 35
+    },
+    {
+      "sprint": "S10",
+      "committed": 38,
+      "completed": 38
+    },
+    {
+      "sprint": "S11",
+      "committed": 40,
+      "completed": 36
+    }
+  ],
+  "next_week": [
+    {
+      "title": "Complete onboarding UI wizard",
+      "owner": "Divya"
+    },
+    {
+      "title": "Deliver audit log search screen",
+      "owner": "Ravi"
+    },
+    {
+      "title": "Finish role-based access checks",
+      "owner": "Meera"
+    },
+    {
+      "title": "Unblock SSO via mock provider",
+      "owner": "Asha"
+    },
+    {
+      "title": "Run load test and publish baseline",
+      "owner": "Karthik"
+    }
+  ]
+}
